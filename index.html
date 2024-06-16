@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEE5 Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">ZEE5</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Web Series</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+            <form class="search-box" onsubmit="return handleSearch(event)">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+            <button class="buy-plan" onclick="buyPlan()">Buy Plan</button>
+        </nav>
+    </header>
+    <main>
+        <section class="carousel">
+            <div class="carousel-item active" style="background-image: url('slide1.webp');">
+                <div class="carousel-caption">Featured Show 1</div>
+            </div>
+            <div class="carousel-item" style="background-image: url('slide2.webp');">
+                <div class="carousel-caption">Featured Show 2</div>
+            </div>
+            <div class="carousel-item" style="background-image: url('slide3.webp');">
+                <div class="carousel-caption">Featured Show 3</div>
+            </div>
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+        </section>
+        <section class="content">
+            <div class="show">
+                <img src="inception.jpg" alt="Inception">
+                <div class="show-info">
+                    <h3>Inception</h3>
+                    <p>A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.</p>
+                </div>
+            </div>
+            <div class="show">
+                <img src="Thedarknight.jpg" alt="The Dark Knight">
+                <div class="show-info">
+                    <h3>The Dark Knight</h3>
+                    <p>When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.</p>
+                </div>
+            </div>
+            <div class="show">
+                <img src="strangerthings.jpg" alt="Stranger Things">
+                <div class="show-info">
+                    <h3>Stranger Things</h3>
+                    <p>When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.</p>
+                </div>
+            </div>
+            <div class="show">
+                <img src="Mandalorian.jpg" alt="The Mandalorian">
+                <div class="show-info">
+                    <h3>The Mandalorian</h3>
+                    <p>The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ZEE5 Clone. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
